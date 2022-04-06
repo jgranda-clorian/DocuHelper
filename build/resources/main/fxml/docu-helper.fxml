@@ -5,7 +5,7 @@
 <?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 
-<SplitPane dividerPositions="0.34187500000000004" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+<SplitPane fx:id="splitPane1" dividerPositions="0.34187500000000004" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="545.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.clorian.docuhelper.controller.DocuHelperController">
   <items>
     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="59.0">
          <children>
@@ -17,7 +17,7 @@
             </Label>
             <Circle fill="WHITE" layoutX="32.0" layoutY="155.0" radius="15.0" stroke="#00000029" strokeType="INSIDE" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="140.0" />
             <Circle fill="WHITE" layoutX="32.0" layoutY="258.0" radius="15.0" stroke="#00000029" strokeType="INSIDE" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="243.0" />
-            <Button layoutX="66.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Select Folder">
+            <Button layoutX="66.0" layoutY="37.0" mnemonicParsing="false" onAction="#onSelectedFolder" prefHeight="30.0" prefWidth="95.0" text="Select Folder">
                <font>
                   <Font size="10.0" />
                </font></Button>
@@ -70,7 +70,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <ListView prefHeight="200.0" prefWidth="315.0" />
+                        <ListView fx:id="directoryListView" prefHeight="200.0" prefWidth="315.0" />
                      </children>
                   </AnchorPane>
               </content>
