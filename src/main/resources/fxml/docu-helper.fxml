@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.34187500000000004" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="545.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="323.0" prefWidth="59.0">
+         <children>
+            <Circle fill="#2facff" layoutX="32.0" layoutY="52.0" radius="15.0" stroke="#00000029" strokeType="INSIDE" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="37.0" />
+            <Label layoutX="28.0" layoutY="43.0" text="1" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Circle fill="WHITE" layoutX="32.0" layoutY="155.0" radius="15.0" stroke="#00000029" strokeType="INSIDE" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="140.0" />
+            <Circle fill="WHITE" layoutX="32.0" layoutY="258.0" radius="15.0" stroke="#00000029" strokeType="INSIDE" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="243.0" />
+            <Button layoutX="66.0" layoutY="37.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Select Folder">
+               <font>
+                  <Font size="10.0" />
+               </font></Button>
+            <Label layoutX="70.0" layoutY="100.0" text="Enter Code" textFill="#00000045">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <TextField disable="true" layoutX="66.0" layoutY="118.0" prefHeight="15.0" prefWidth="95.0" />
+            <Label layoutX="70.0" layoutY="148.0" text="Select Date" textFill="#00000045">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <DatePicker disable="true" layoutX="65.0" layoutY="165.0" prefHeight="25.0" prefWidth="95.0" />
+            <Button disable="true" layoutX="64.0" layoutY="243.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="95.0" text="Generate Files">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+            <Label layoutX="28.0" layoutY="146.0" text="2" textFill="#00000044">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="249.0" text="3" textFill="#00000045">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Line endX="-63.0" endY="40.333343505859375" layoutX="95.0" layoutY="100.0" startX="-63.0" startY="-32.99999237060547" stroke="#0000003e" />
+            <Line endX="-63.0" endY="40.333343505859375" layoutX="95.0" layoutY="203.0" startX="-63.0" startY="-32.99999237060547" stroke="#0000003e" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="284.0">
+         <children>
+            <Label layoutX="15.0" layoutY="271.0" textFill="#000000cc">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="20.0" text="Path to folder:" textFill="#000000cc" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label fx:id="pathToFolderLabel" layoutX="18.0" layoutY="35.0" text="-" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="35.0">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <ScrollPane layoutX="14.0" layoutY="59.0" prefHeight="200.0" prefWidth="329.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <ListView prefHeight="200.0" prefWidth="315.0" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </ScrollPane>
+            <Button disable="true" layoutX="15.0" layoutY="271.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="147.0" text="Open new reservations folder">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
